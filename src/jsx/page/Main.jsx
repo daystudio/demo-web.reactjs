@@ -121,6 +121,7 @@ class App extends Component {
               </Typography>
             </Button>
             <IconButton color="inherit"
+              id="add"
               onClick={async(e) => {
                 this.handleClickOpen();
                 // const rs = this.state.rs;
@@ -132,7 +133,7 @@ class App extends Component {
             </IconButton>
           </Toolbar>
         </AppBar>
-        <div className={classes.root}>
+        <div id="list" className={classes.root}>
         {self.state.data.map(d => (
           <Card key={d.id}>
             <CardHeader
